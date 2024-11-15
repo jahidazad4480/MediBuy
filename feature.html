@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MediBuy</title>
+    <link rel="stylesheet" href="feature.css">
+</head>
+<body>
+    
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <div class="hero-content">
+            <h2>Fast & Reliable Medicine Delivery</h2>
+            <p>Get your medications delivered to your doorstep with MediBuy.</p>
+            <div class="search-container">
+                <input type="text" placeholder="Search for medicines...">
+                <button>Find Medicines</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Prescription Upload Section -->
+    <section id="upload-prescription">
+        <h2>Upload Your Prescription</h2>
+        <input type="file" accept="image/*, application/pdf">
+        <button>Upload</button>
+    </section>
+
+    <!-- Order Tracking Section -->
+    <section id="order-tracking">
+        <h2>Track Your Order</h2>
+        <input type="text" placeholder="Enter Order ID">
+        <button>Track</button>
+    </section>
+
+    <!-- Pharmacy Locator -->
+    <section id="pharmacy-locator">
+        <h2>Find Nearby Pharmacies</h2>
+        <button onclick="getLocation()">Use My Location</button>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 MediBuy. All rights reserved.</p>
+    </footer>
+
+    <script>
+        //  location access
+        function getLocation() {
+            if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(showPosition);
+            } else {
+                alert("Geolocation is not supported by this browser.");
+            }
+        }
+
+        function showPosition(position) {
+            alert("Latitude: " + position.coords.latitude + 
+            "\nLongitude: " + position.coords.longitude);
+        }
+    </script>
+</body>
+</html>
