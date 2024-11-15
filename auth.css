@@ -1,16 +1,44 @@
 /* General Styling */
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: Arial, sans-serif;
+    display: flex; /* Use flexbox */
+    flex-direction: column; /* Stack header and main content */
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+    background-color: #f3f4f6;
     margin: 0;
     padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #f3f4f6;
-    height: 100vh;
+    height: 100vh; /* Full viewport height */
     color: #333;
 }
 
+header {
+    background-color: #2a9d8f;
+    color: white;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute; /* Keep header at the top */
+    top: 0;
+    left: 0;
+    width: 100%; /* Full-width header */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+header h1 {
+    font-size: 22px;
+    font-weight: bold;
+    color: white;               
+    background-color: #24c4a9;  
+    padding: 8px 15px;          
+    border-radius: 8px;         
+    margin: 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); 
+    font-family: 'Arial', sans-serif; 
+    display: inline-block;     
+}
 .login-container {
     display: flex;
     max-width: 1300px;
