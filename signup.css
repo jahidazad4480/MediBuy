@@ -16,7 +16,7 @@ body {
 header {
     background-color: #2a9d8f;
     color: white;
-    padding: 15px 20px;
+    padding: 10px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -31,11 +31,10 @@ header h1 {
     font-size: 22px;
     font-weight: bold;
     color: white;               
-    background-color: #24c4a9;  
-    padding: 8px 15px;          
+    background-color: #d2ede8;  
+    padding: none;          
     border-radius: 8px;         
     margin: 0;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); 
     font-family: 'Arial', sans-serif; 
     display: inline-block;     
 }
@@ -149,4 +148,38 @@ button:hover {
 
 .signup-text a:hover {
     text-decoration: underline;
+}
+
+.button-link {
+    display: inline-block;
+    background-color: #2a9d8f;
+    color: rgb(255, 255, 255);
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.button-link:hover {
+    background-color: #21867a;
+}
+
+.sign_button-link {
+    display: inline-block;
+    background-color: #2a9d8f;
+    color: rgb(255, 255, 255);
+    padding: 10px 160px;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.sign_button-link:hover {
+    background-color: #21867a;
 }
