@@ -7,6 +7,12 @@
     <link rel="stylesheet" href="feature.css">
 </head>
 <body>
+    <header>
+        <h1>
+            <a href="Home Page.html" class="button-link">MediBuy</a></h1>
+        </h1>
+    </header>
+    
     
 
     <!-- Hero Section -->
@@ -22,44 +28,46 @@
     </section>
 
     <!-- Prescription Upload Section -->
-    <section id="upload-prescription">
-        <h2>Upload Your Prescription</h2>
-        <input type="file" accept="image/*, application/pdf">
-        <button>Upload</button>
-    </section>
-
-    <!-- Order Tracking Section -->
-    <section id="order-tracking">
-        <h2>Track Your Order</h2>
-        <input type="text" placeholder="Enter Order ID">
-        <button>Track</button>
-    </section>
-
-    <!-- Pharmacy Locator -->
-    <section id="pharmacy-locator">
-        <h2>Find Nearby Pharmacies</h2>
-        <button onclick="getLocation()">Use My Location</button>
-    </section>
+    <section class="feature">
+        <div class="feature-container">
+          <div class="feature-item">
+            <img src="image/medical-prescription.png" alt="Upload Prescriptions">
+            <h3>
+                <a href="https://google.com/" class="button-link">Prescription</a>
+            </h3>
+            <p>Upload your prescriptions for Searching Medicine.</p>
+          </div>
+          <div class="feature-item">
+            <img src="image/search.png" alt="Book Appointment">
+            <h3>
+                <a href="https://google.com/" class="button-link">Search Pharmacy</a>
+            </h3>
+            <p>Find Nearby Pharmacies.</p>
+          </div>
+          <div class="feature-item">
+            <img src="image/secure-payment.png" alt="Doctor Video Consultation">
+            <h3>
+                <a href="https://google.com/" class="button-link">Secure Payment Gateway</a>
+            </h3>
+            </h3>
+            <p>See Your Payment History.</p>
+          </div>
+          <div class="feature-item">
+            <img src="image/tracking.png" alt="Call to Order">
+            <h3>
+                <a href="https://google.com/" class="button-link">Order Tracking</a>
+            </h3>
+            </h3>
+            <p>Track Your Order.</p>
+          </div>
+        </div>
+      </section>
 
     <!-- Footer -->
     <footer>
         <p>&copy; 2024 MediBuy. All rights reserved.</p>
     </footer>
 
-    <script>
-        //  location access
-        function getLocation() {
-            if (navigator.geolocation) {
-                navigator.geolocation.getCurrentPosition(showPosition);
-            } else {
-                alert("Geolocation is not supported by this browser.");
-            }
-        }
 
-        function showPosition(position) {
-            alert("Latitude: " + position.coords.latitude + 
-            "\nLongitude: " + position.coords.longitude);
-        }
-    </script>
 </body>
 </html>
